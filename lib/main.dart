@@ -1,4 +1,6 @@
 import 'package:appptstore/Orders.dart';
+import 'package:appptstore/Personal_Info.dart';
+import 'package:appptstore/profile.dart';
 import 'package:flutter/material.dart';
 import 'Drawer.dart';
 import 'statistics.dart';
@@ -16,8 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: profile(),
+      home: PersonalInfor(),
     );
   }
 }
-

@@ -12,8 +12,10 @@ class Orders extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Đơn mua"),
           backgroundColor: Colors.blueAccent[300],
-          leading: IconButton(
-              onPressed: () {}, icon: const Icon(Icons.arrow_back_ios_new)),
+          actions: [
+            IconButton(
+                onPressed: () {}, icon: const Icon(Icons.arrow_back_ios_new))
+          ],
         ),
         body: Padding(
           padding: EdgeInsets.all(12.0),
