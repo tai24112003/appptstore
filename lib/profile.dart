@@ -29,8 +29,13 @@ class Profile extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-        children: [PersonalInfor(), StatisticsPage(), Orders()],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            PersonalInfor(),
+             Orders(),
+              StatisticsPage()],
+        ),
       ),
       drawer: Menu(),
       bottomNavigationBar: BottomNavigationBar(items: const [

@@ -3,11 +3,8 @@ import 'package:flutter/material.dart';
 class StatisticsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Statistics'),
-      ),
-      body: Column(
+    return Container(
+      child: Column(
         children: [
           const SizedBox(height: 40), // Khoảng cách giữa các dòng
           Column(
@@ -97,15 +94,6 @@ class StatisticsPage extends StatelessWidget {
             ],
           ),
           SizedBox(height: 15.0),
-          Column(
-            children: [
-              Container(
-                color: Color.fromARGB(255, 176, 220, 255), // Màu sắc của cột
-                height: 500.0,
-                width: 390.0,
-              ),
-            ],
-          )
         ],
       ),
     );
