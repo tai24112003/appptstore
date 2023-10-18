@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Statistics_Bill extends StatelessWidget {
+  const Statistics_Bill({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
