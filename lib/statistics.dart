@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class StatisticsPage extends StatelessWidget {
+  const StatisticsPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +25,11 @@ class StatisticsPage extends StatelessWidget {
                     title: const Text('Số sản phẩm đã mua',
                         textAlign: TextAlign.center),
                     trailing: const Icon(Icons.chevron_right),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pop(context, (route) => route.isFirst);
+                      Navigator.pushNamed(
+                          context, '/statistics_products_purschased');
+                    },
                   ),
                 ),
               ),
@@ -46,7 +51,11 @@ class StatisticsPage extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
                     trailing: const Icon(Icons.chevron_right),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pop(context, (route) => route.isFirst);
+                      Navigator.pushNamed(
+                          context, '/statistics_products_successed');
+                    },
                   ),
                 ),
               ),
@@ -68,7 +77,10 @@ class StatisticsPage extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
                     trailing: const Icon(Icons.chevron_right),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pop(context, (route) => route.isFirst);
+                      Navigator.pushNamed(context, '/statistics_bill');
+                    },
                   ),
                 ),
               ),
@@ -101,7 +113,7 @@ class StatisticsPage extends StatelessWidget {
             children: [
               Container(
                 color: Color.fromARGB(255, 176, 220, 255), // Màu sắc của cột
-                height: 500.0,
+                height: 300.0,
                 width: 390.0,
               ),
             ],
