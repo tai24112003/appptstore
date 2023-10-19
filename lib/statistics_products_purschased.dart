@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Statistics_Products_Purchased extends StatelessWidget {
+  const Statistics_Products_Purchased({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
